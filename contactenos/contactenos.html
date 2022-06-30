@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilosc.css">
+    <script src = "validaciones.js"></script>
+    <title>Formulario de Registro</title>
+</head>
+<body class="estiloUno">
+    <header>
+        <h1>Contactenos</h1>
+        <hr>
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="">Proyectos</a>
+                <ul>
+                    <li><a href="">Pseint</a></li>
+                    <li><a href="">Java</a></li>
+                </ul>
+            </li>
+            <li><a href="../HV/Informacion.html">Hoja de vida</a>
+            <li><a href="contactenos.html">Contactenos</a></li>
+        </ul>
+        </header>
+    <form class="formulario" id = form_nuevo_usuario method="POST" onsubmit="return validar_nombre_usuario()">
+        <h2>CONTACTENOS</h2>
+        <input class="control" type="text" name = "nombre" id ="dato_nombre_usuario" placeholder="Ingrese su Nombre"> 
+        <input class="control" type="text" name = "email" id ="email_usuario" placeholder="Ingrese su E-mail">
+        <input class="control" type="text" name = "asunto" id ="asunto_usuario" placeholder="Asunto del correo"> 
+        <input class="texto"   type="text" name="mensaje" id="mensaje_usuario" placeholder="Escriba su mensaje">
+        <button type = "button" class="boton" id="enviar_registro" value="registro" onclick="agregarRegistro()"><b> Enviar el Formulario</b></button>
+        <button type = "button" class="boton" id="enviar_registro" value="registro" onclick="limpiarRegistro()"><b> Limpiar</b></button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,110 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+    background: linear-gradient(to right, #DECBA4, #3E5151);
+}
+.menu {
+    list-style: none;
+    border: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 780px;
+    margin: auto;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+
+}
+
+.menu > li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li  a:hover{
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+    background: linear-gradient(to right, #DECBA4, #3E5151);
+}
+
+.menu li a:active{
+    background: #3E5151;
+}
+
+.menu{
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);
+    background: linear-gradient(to left, #DECBA4, #3E5151);
+    border: none;
+}
+
+.menu li  ul {
+    list-style: none;
+    display:none;
+    padding: 5px;
+    position: absolute;
+    min-width: 120px;
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);
+    background: linear-gradient(to left, #DECBA4, #3E5151);
+
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+
+
+
+h1{
+    text-align: center;
+    position: relative;
+    font-family: 'Smooch', cursive;
+    font-size: 300%;
+}
+
+h1::after, h1::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background-color:black;
+    top: 0.6em;
+    transform: scale(1);
+    transition: all 0.2s ease-in;
+}
+
+h1:hover::before, h1:hover::after{
+    transform:scale(0);
+}
+h1::before{
+    left: 15%;
+}
+
+h1::after{
+    right: 15%;
+}
+
+img{
+    display: block;
+    margin: auto;
+    border: 10px solid #B4B4B3;
+    box-shadow: -10px -10px 20px #4b4b4b;
+}
+
+h3{
+    text-align: center;
+}
+
+.video{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#titulo-video{
+    text-align: center;
+}

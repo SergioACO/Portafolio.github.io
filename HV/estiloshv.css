@@ -1,0 +1,280 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu {
+    list-style: none;
+    border: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 1030px;
+    margin: auto;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+
+}
+
+.menu > li{
+    display: inline-block;
+    text-align: center;
+}
+
+
+.menu li:hover > ul{
+    display: block;
+}
+
+
+#imagen{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: 10px solid #B4B4B3;
+    box-shadow: -10px -10px 20px #4b4b4b;
+}
+
+h2 {
+    margin-top: 1px;
+    text-align: center;
+    position: relative;
+    max-height: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    text-align: center;
+    position: relative;
+    font-family: 'Smooch', cursive;;
+    font-size: 300%;
+}
+
+p{
+    text-align: center;
+    position: relative;
+    font-family:"Goudy Old Style";
+    font-size: 120%;
+}
+
+h1::after, h1::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background-color:black;
+    top: 0.6em;
+    transform: scale(1);
+    transition: all 0.2s ease-in;
+}
+
+h1:hover::before, h1:hover::after{
+    transform:scale(0);
+}
+h1::before{
+    left: 15%;
+}
+
+h1::after{
+    right: 15%;
+}
+
+#pdf a{
+    color: white;
+    text-decoration: none;
+    background: #092327;
+    padding: 5px 30px ;
+}
+
+#pdf :hover{
+    background: #103439;
+}
+
+#pdf :active{
+    background: #215057;
+}
+
+#pdf{
+    display: block;
+    border: none;
+    margin: auto;
+    padding: 5px 8px;
+    background: #092327;
+}
+
+.lista li {
+    list-style-type: square;
+    margin-left: 170px;
+}
+
+
+/* CSS para el cambio de tema - color de la página*/
+
+/* Estilo UNO */
+.estiloUno{
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+    background: linear-gradient(to right, #DECBA4, #3E5151); 
+}
+
+.estiloUno .menu{
+    border: none;
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);
+    background: linear-gradient(to left, #DECBA4, #3E5151);
+}
+
+.estiloUno .menu li  a:hover{
+    background: -webkit-linear-gradient(to right    , #DECBA4, #3E5151);
+    background: linear-gradient(to right, #DECBA4, #3E5151); 
+}
+
+.estiloUno .menu li a:active{
+    background: #DECBA4;
+}
+
+/*Estilo Dos*/
+.estiloDos{
+    background: #3C3B3F;
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);
+    background: linear-gradient(to right, #605C3C, #3C3B3F);
+}
+
+.estiloDos .menu{
+    border: none;
+    background: #3C3B3F;
+    background: -webkit-linear-gradient(to left, #605C3C, #3C3B3F);
+    background: linear-gradient(to left, #605C3C, #3C3B3F);
+}
+
+.estiloDos .menu li  a:hover{
+    background: #3C3B3F;
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);
+    background: linear-gradient(to right, #605C3C, #3C3B3F);
+}
+
+.estiloDos .menu li a:active{
+    background: #605C3C;
+}
+
+/* Estilo Tres*/
+.estiloTres{
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+    color: white;
+}
+
+.estiloTres .menu{
+    border: none;
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+.estiloTres .menu li  a:hover{
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+}
+
+.estiloTres .menu li a:active{
+    background: #434343;
+}
+
+.estiloTres h1::after, .estiloTres h1::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background-color:white;
+    top: 0.6em;
+    transform: scale(1);
+    transition: all 0.2s ease-in;
+}
+
+.estiloTres h1:hover::before, .estiloTres h1:hover::after{
+    transform:scale(0);
+}
+.estiloTres h1::before{
+    left: 15%;
+}
+
+.estiloTres h1::after{
+    right: 15%;
+}
+
+/* Estilo de los botones de cambio de tema*/
+
+#uno{
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+    background: linear-gradient(to right, #DECBA4, #3E5151); 
+    color: white;
+}
+
+#dos{
+    background: #3C3B3F;
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);
+    background: linear-gradient(to right, #605C3C, #3C3B3F);
+}
+
+#tres{
+    background: #000000;
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    background: linear-gradient(to right, #434343, #000000);
+    color: white;
+}
+
+/* CSS para el acordeon */
+
+.container{
+    width: 600px;
+    margin-top: 40px;
+    margin-left: auto   ;
+    margin-right: auto;
+}
+
+.m{
+    width: 100%;
+    background: #44A08D;
+    background: -webkit-linear-gradient(to right, #093637, #44A08D);
+    background: linear-gradient(to right, #093637, #44A08D);
+}
+
+.container .ul{
+    width:  100%;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.list{
+    width: 100%;
+    list-style: none;
+    height: 48px;
+    border-bottom: 2px solid #fff;
+    transition: .7s;
+    overflow: hidden;
+}
+
+.titulo{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #092327;
+    color: white;
+    cursor: pointer;
+    border: solid #215057 ;
+}
+
+.scale{
+    height: 250px;
+}
+
+.scaleRP{
+    height: 130px;
+}
+
+
+
+

@@ -1,0 +1,162 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+    background: linear-gradient(to right, #DECBA4, #3E5151);
+}
+.menu {
+    list-style: none;
+    border: none;
+    padding: 0;
+    background: #092327;
+    width: 90%;
+    max-width: 780px;
+    margin: auto;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+
+}
+
+.menu > li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li  a:hover{
+    background: -webkit-linear-gradient(to right, #DECBA4, #3E5151);
+    background: linear-gradient(to right, #DECBA4, #3E5151);
+}
+
+.menu li a:active{
+    background: #3E5151;
+}
+
+.menu{
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);
+    background: linear-gradient(to left, #DECBA4, #3E5151);
+    border: none;
+}
+
+.menu li  ul {
+    list-style: none;
+    display:none;
+    padding: 5px;
+    position: absolute;
+    min-width: 120px;
+    background: -webkit-linear-gradient(to left, #DECBA4, #3E5151);
+    background: linear-gradient(to left, #DECBA4, #3E5151);
+
+}
+
+.menu li:hover > ul{
+    display: block;
+}
+
+
+
+
+h1{
+    text-align: center;
+    position: relative;
+    font-family: 'Smooch', cursive;
+    font-size: 300%;
+}
+
+p{
+    text-align: center;
+    position: relative;
+    font-family:"Goudy Old Style";
+    font-size: 120%;
+}
+
+h1::after, h1::before{
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    background-color:black;
+    top: 0.6em;
+    transform: scale(1);
+    transition: all 0.2s ease-in;
+}
+
+h1:hover::before, h1:hover::after{
+    transform:scale(0);
+}
+h1::before{
+    left: 20%;
+}
+
+h1::after{
+    right: 20%;
+}
+
+.lista li {
+    list-style-type: square;
+    margin-left: 170px;
+}
+
+
+#sobremi{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px;
+    color: #111135;
+    display: flex;
+}
+
+#sobremi .contenedor-foto{
+    width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto{
+    padding: 20px;
+    width:  100%;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#sobremi .sobremi{
+    margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h2 span{
+    color: #f7e5ef;
+}
+
+#sobremi .sobremi h3{
+    font-size:  18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p{
+    font-size: 20px;
+    line-height: 25px;
+    color: #000;
+    margin-bottom: 12px;
+}
+
